@@ -21,8 +21,9 @@
 > [!NOTE]
 > This independently versioned fork adds the ForgetEval and UtilityEval datasets,
 > combined evaluation suites, PEFT checkpoint loading, and thesis pass@k behavior for
-> *Forgetting by Design*. It is pinned as a submodule by the
-> [top-level experiment repository](https://github.com/DogukanBaysal/Code-Unlearning).
+> *Forgetting by Design*. ForgetEval and UtilityEval are the mutation-hardened
+> functional-correctness components of the MOCHI benchmark. This fork is pinned as a
+> submodule by the [top-level experiment repository](https://github.com/DogukanBaysal/Code-Unlearning).
 
 ## 📢 News
 
@@ -82,7 +83,12 @@ Want to know more details? Read our papers & materials!
 
 ## Thesis-specific extensions in this fork
 
-This fork adds the functional evaluations used by *Forgetting by Design* while retaining the upstream HumanEval/MBPP/EvalPerf interfaces.
+This fork adds the functional evaluation layer for **MOCHI (Machine Unlearning of Code
+with Hidden Information)** while retaining the upstream HumanEval/MBPP/EvalPerf
+interfaces. UtilityEval measures whether coding behavior acquired during MOCHI
+fine-tuning survives unlearning; ForgetEval measures the functionality of forget-set
+units whose secret or complete body is targeted. The thesis evaluates these pass@k
+results alongside suffix-reconstruction forget quality and GPU energy.
 
 ### Added datasets
 
