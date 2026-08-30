@@ -18,6 +18,12 @@
     <a href="#-acknowledgement">🙏Acknowledgement</a>
 </p>
 
+> [!NOTE]
+> This independently versioned fork adds the ForgetEval and UtilityEval datasets,
+> combined evaluation suites, PEFT checkpoint loading, and thesis pass@k behavior for
+> *Forgetting by Design*. It is pinned as a submodule by the
+> [top-level experiment repository](https://github.com/DogukanBaysal/Code-Unlearning).
+
 ## 📢 News
 
 Who's using EvalPlus datasets? EvalPlus has been used by various LLM teams, including:
